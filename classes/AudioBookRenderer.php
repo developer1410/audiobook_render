@@ -3,7 +3,7 @@
 /**
  * Class AudioBookRender
  */
-class AudioBookRender
+class AudioBookRenderer
 {
     protected string $fileName;
     protected float $chapterSilent;

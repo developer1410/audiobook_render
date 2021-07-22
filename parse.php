@@ -1,7 +1,7 @@
 <?php
 // Developed with PHP7.4
 
-include "./classes/AudioBookRender.php";
+include "./classes/AudioBookRenderer.php";
 include "./classes/XMLFileReader.php";
 
 $arguments = getopt(null, ['f:', 'cs:', 'mct:', 'lcs:']);
@@ -11,7 +11,7 @@ if (count($arguments) != 4) {
 }
 
 try {
-    $audioBookRender = new AudioBookRender(
+    $audioBookRender = new AudioBookRenderer(
         (string) $arguments['f'],
         (float) $arguments['cs'],
         (float) $arguments['mct'],
